@@ -8,7 +8,7 @@ plot2 <- function(){
         ## Assumes household_power_consumption.txt file located in working dir
         
         ## read data
-        powerdata <- read.table("C:/Users/angul/OneDrive/R/ExploreData/Data/household_power_consumption.txt", stringsAsFactors = FALSE, header = TRUE, sep =";"  )
+        powerdata <- read.table("./household_power_consumption.txt", stringsAsFactors = FALSE, header = TRUE, sep =";"  )
         
         ## Create column in table with date and time merged together
         FullTimeDate <- strptime(paste(powerdata$Date, powerdata$Time, sep=" "), "%d/%m/%Y %H:%M:%S")
