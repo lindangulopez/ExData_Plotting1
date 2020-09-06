@@ -8,7 +8,7 @@ plot1<- function(){
         ## Assumes household_power_consumption.txt file located in working dir
         
         ## read data
-        powerdata <- read.table("C:/Users/angul/OneDrive/R/ExploreData/Data/household_power_consumption.txt", stringsAsFactors = FALSE, header = TRUE, sep =";"  )
+        powerdata <- read.table("./household_power_consumption.txt", stringsAsFactors = FALSE, header = TRUE, sep =";"  )
         
         ## change class of all columns to correct class
         powerdata$Date <- as.Date(powerdata$Date, format="%d/%m/%Y")
